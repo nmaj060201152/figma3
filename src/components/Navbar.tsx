@@ -11,18 +11,21 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div  className="flex w-auto h-[66px] text-white justify-between items-center bg-green-600 md:bg-red-600">
+        <div  className="flex h-[66px] text-black justify-evenly items-center w-full sm:w-[390px] md:w-[1440px]">
             <div>
-            <button className="text-black w-[18.75px] h-[14.25px] mt-[1px] ml-[2.63px] gap-0 opacity-100" onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button>
+            <button className="text-black w-[18.75px] h-[14.25px] mt-[1px] ml-[2.63px] gap-0 opacity-100 block md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button>
 
             </div>
             <div>
-            <Link href="/"><h1 className="w-[126px] h-[18px] mt-[1px] ml-[56px] gap-0 opacity-100">SHOP.CO</h1>
+            <Link href="/"><h1 className="w-[6px] h-[18px] mt-[1px] ml-[6px] gap-0 opacity-100">SHOP.CO</h1>
         </Link>
 
             </div>
-            <div>
-            <ul className="flex ml-[2px] justify-between w-[20px]">
+           
+           
+           
+            <div className="w-[500px] hidden md:block">
+            <ul className="flex ml-[2px]  items-center w-auto justify-evenly">
                     <li><Link href="/pages/shop">Shop</Link></li>
                     <li><Link href="/pages/onsale">On Sale</Link></li>
                     <li><Link href="/pages/arrivals">New Arrivals</Link></li>
@@ -30,11 +33,11 @@ const Navbar = () => {
                 </ul>
 
             </div>
-            <div>
-                <input  type="text" />
+            <div className="w-[1%] md:w-[15%]">
+                <input type="text" />
                 </div>
 
-                <div>
+                <div className="flex justify-evenly gap-3 w-auto">
 <FaSearch/>
 <LuShoppingCart/>
 <RiAccountCircleLine/>
