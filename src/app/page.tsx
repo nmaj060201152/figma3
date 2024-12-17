@@ -1,6 +1,4 @@
 import React from 'react'
-// import Overheader from '@/components/overheader';
-// import Navbar from '@/components/Navbar';
 
 
 const Home = () => {
